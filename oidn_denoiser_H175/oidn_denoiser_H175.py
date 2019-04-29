@@ -46,8 +46,10 @@ class denoiser():
 
     def set_use_affinity(self,a):
         self.use_affinity = a
+
     def set_debug_mode(self,a):
         self.debug_mode = a
+
     def set_num_threads(self,num):
         self.num_threads = num
 
