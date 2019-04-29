@@ -11,10 +11,10 @@ class denoiser():
         self.albedo = None
         self.normal = None
         self.output = None
-        self.use_hdr=False
-        self.use_srgb=False
-        self.use_affinity=False
-        self.num_threads=0
+        self.use_hdr = False
+        self.use_srgb = False
+        self.use_affinity = False
+        self.num_threads = 0
         self.debug_mode = False
 
         pth = os.path.split(os.path.realpath(__file__))[0]
