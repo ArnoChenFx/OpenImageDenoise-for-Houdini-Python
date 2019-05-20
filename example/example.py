@@ -1,6 +1,5 @@
-import oidn_denoiser_H175
-reload(oidn_denoiser_H175)
-from oidn_denoiser_H175 import denoiser
+import oidn_denoiser
+reload(oidn_denoiser)
 
 
 beauty = "car_beauty.jpg"
@@ -9,7 +8,7 @@ normal = "car_normal.jpg"
 output = "car_denoised.png"
 
 
-denoiser = denoiser()
+denoiser = oidn_denoiser.denoiser()
 
 denoiser.beauty = beauty
 denoiser.albedo = albedo
