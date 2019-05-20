@@ -1,11 +1,13 @@
 import oidn_denoiser
-reload(oidn_denoiser)
+import os
 
+path = os.path.split(os.path.realpath(__file__))[0]
+path = path.replace("\\","/") + "/"
 
-beauty = "car_beauty.jpg"
-albedo = "car_albedo.jpg"
-normal = "car_normal.jpg"
-output = "car_denoised.png"
+beauty = path + "car_beauty.jpg"
+albedo = path + "car_albedo.jpg"
+normal = path + "car_normal.jpg"
+output = path + "car_denoised.png"
 
 
 denoiser = oidn_denoiser.denoiser()
